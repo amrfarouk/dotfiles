@@ -1,0 +1,23 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+  link_dotfile_default: link
+  link_on_import: link
+  longkey: true
+dotfiles:
+  f_etc_environment:
+    src: etc/environment
+    dst: /etc/environment
+  f_etc_rc.local:
+    src: etc/rc.local
+    dst: /etc/rc.local
+  f_etc_shells:
+    src: etc/shells
+    dst: /etc/shells
+profiles:
+  ubuntuOne:
+    dotfiles:
+    - f_etc_environment
+    - f_etc_rc.local
+    - f_etc_shells
