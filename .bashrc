@@ -117,4 +117,6 @@ if ! shopt -oq posix; then
 fi
 export LD_LIBRARY_PATH=/usr/lib/cuda/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/lib/cuda/include:$LD_LIBRARY_PATH
-alias config='/usr/bin/git --git-dir=/home/amrfarouk/.cfg/ --work-tree=/home/amrfarouk'
+alias dotgit='/usr/bin/git --git-dir=/home/amrfarouk/.dotfiles/ --work-tree=/home/amrfarouk'
+alias dotcom="dotfiles commit -am ' "
+alias dotpush="dotfiles push origin master"
